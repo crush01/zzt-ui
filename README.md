@@ -22,10 +22,14 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
 #### TextOverflow
+
 **介绍**：超出部分显示... 鼠标移入换行显示全部
+
 **使用**：
 `import { TextOverflow } from 'zzt-ui'`
 `components: {TextOverflow}`
+
 **参数**: text: 文本内容
      overWidth: 文本宽度
