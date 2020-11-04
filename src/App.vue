@@ -1,23 +1,41 @@
 <template>
   <div id="app">
-    <TextOverflow
-      text="1 Welcome to Your zzt-ui 1 Welcome to Your zzt-ui 1 Welcome to Your zzt-ui 1 Welcome to Your zzt-ui 1 Welcome to Your zzt-ui 2 Welcome to Your zzt-ui"
-      overWidth="200px"
-    />
-    <div>dafdsf</div>
+    <h3>反转效果组件：</h3>
+    <reversal />
   </div>
 </template>
 
 <script>
-import TextOverflow from '../packages/TextOverflow'
+import Reversal from "../packages/Reversal";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    TextOverflow
-  }
-}
+    Reversal,
+  },
+  data() {
+    return {
+      textList: [
+        {
+          text: "import Reversal from ../packages/Reversal",
+          isOut: false,
+        },
+        {
+          text: "import Revers",
+          isOut: false,
+        },
+        {
+          text: "import Reversal from ../packages/Reversal",
+          isOut: true,
+        },
+        {
+          text: "import Reversal from ../packages/Reversal",
+          isOut: false,
+        },
+      ],
+    };
+  },
+};
 </script>
 
-<style>
-</style>
+<style></style>

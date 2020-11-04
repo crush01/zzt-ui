@@ -1,6 +1,7 @@
-import TextOverflow from './TextOverflow'
+import Reversal from './Reversal'
+
 const components = {
-  TextOverflow
+  Reversal
 }
 const install = function(Vue) {
   Object.values(components).forEach(com => {
@@ -12,5 +13,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 export default {
   install,
-  TextOverflow
+  Reversal
 }

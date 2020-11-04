@@ -1,35 +1,32 @@
-# test-vue
+#### 使用
 
-## Project setup
-```
-yarn install
-```
+**全局引入**
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+`import zztUi from 'zzt-ui`
 
-### Compiles and minifies for production
-```
-yarn build
-```
+`import 'zzt-ui/styles/index.css'`
+ 
+`Vue.use`
 
-### Lints and fixes files
-```
-yarn lint
-```
+**按需引入**
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-#### TextOverflow
-
-**介绍**：超出部分显示... 鼠标移入换行显示全部
-
-**使用**：
 `import { TextOverflow } from 'zzt-ui'`
+
+`import 'zzt-ui/styles/TextOverflow.css'`
+
 `components: {TextOverflow}`
 
-**参数**: text: 文本内容
-     overWidth: 文本宽度
+#### Reversal
+
+**介绍**：反转效果
+
+**使用**：
+`import { Reversal } from 'zzt-ui'`
+
+`import 'zzt-ui/lib/zzt-ui.css'`
+
+`components: {Reversal}`
+
+**参数**
+     flipWidth: 容器宽度 320px
+     flipHeight: 容器高度 320px
